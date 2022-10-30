@@ -87,6 +87,8 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 - `Author#articles`
   - Returns an array of Article instances the author has written
+
+
 - `Author#magazines`
   - Returns a **unique** array of Magazine instances for which the author has contributed to
 
