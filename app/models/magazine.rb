@@ -49,7 +49,7 @@ class Magazine
     Article.all.select do |magazine|
      contr = magazine.magazine == self
     end
-      contr.map do |author|
+      contr.collect do |author|
         author.author
       end.map.uniq do |article|
         article.articles.count > 2

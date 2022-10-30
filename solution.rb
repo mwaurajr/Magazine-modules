@@ -73,7 +73,7 @@ def initialize(name)
 end
 
 def articles
-  Article.all.select do |article|
+  Article.all.find_all do |article|
    article.author == self
   end
 end
@@ -93,7 +93,7 @@ Article.new ("magazine", "title")
 end
 
 def topic_areas 
-   magazine.map do |magazine_category|
+   magazine.collect do |magazine_category|
     magazine_category.category.uniq
    end
 
