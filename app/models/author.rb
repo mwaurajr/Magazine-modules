@@ -26,16 +26,14 @@ class Author
       end
 
   def add_article(magazine, title)
- Article.new ("magazine", "title")
-
+ Article.new = (magazine, title)
+  end
   end
 
   def topic_areas 
      magazine.map do |magazine_category|
-      magazine_category.category.uniq
+      magazine_category.category
      end
 
   end
-
-
 end

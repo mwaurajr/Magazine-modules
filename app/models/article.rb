@@ -18,10 +18,5 @@ class Article
         @@all 
     end
 
-    
-end
-
-
-
 
 end
