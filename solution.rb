@@ -42,7 +42,7 @@ class Magazine
     end
   
   end
-  
+
    end
 
    def contributing_authors
@@ -55,8 +55,6 @@ class Magazine
         article.articles.count > 2
       end
    end
- 
-
 
 class Author
     attr_reader :articles, :name, :magazines
